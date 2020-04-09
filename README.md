@@ -1,4 +1,4 @@
-# What's new in TensorFlow 2.0
+# Seeing What's new in TensorFlow 2.0
 
 The following are all the changes coming in TensorFlow 2.0. Let's have a closer look at them:
 
@@ -14,12 +14,13 @@ The following are all the changes coming in TensorFlow 2.0. Let's have a closer 
 * Tidying up the API
 * The conversion tool
 * Alternative variable scoping
+* Bla bla bla 
   
 
 ## Eager Execution
 
 
-Lack of eager execution was one of the main complaints against TensorFlow. I can relate. Having to execute the whole graph and then trying to debug based on the errors was very tedious. Especially, since values of intermediate results haven't been accessible without printing them out by mixing in debug statements into the production code.
+Lack of eager execution was one of my main complaints against TensorFlow, I can relate. Having to execute the whole graph and then trying to debug based on the errors was very tedious. Especially, since values of intermediate results haven't been accessible without printing them out by mixing in debug statements into the production code.
 
 With TensorFlow 2.0, eager execution is activated by default and the very cool thing is that the code nearly doesn't change. Under the hood, you are just working with so-called "EagerTensors" instead of "Tensors" but since they share the same interface, the difference is barely noticeable. Even in execution speed, the difference is hard to see. 
 
